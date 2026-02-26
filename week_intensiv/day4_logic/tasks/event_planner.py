@@ -19,9 +19,7 @@ class EventPlanner:
         self.events.append(event)
 
     def get_events_on_date(self, date):
-        # ТВОЙ КОД ЗДЕСЬ
-        pass
+        return [e.title for e in self.events if e.date == date]
 
     def get_total_participants(self):
-        # ТВОЙ КОД ЗДЕСЬ
-        pass
+        return sum(e.participants for e in self.events)

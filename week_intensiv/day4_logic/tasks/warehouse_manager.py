@@ -16,13 +16,10 @@ class WarehouseManager:
         self.items = []
 
     def add_product(self, product: Product):
-        # Добавьте объект product в список self.items
-        pass
+        self.items.append(product)
 
     def filter_by_category(self, category: str):
-        # Верните список объектов, чья категория совпадает с заданной
-        pass
+        return [p for p in self.items if p.category == category]
 
     def get_total_value(self):
-        # Посчитайте сумму цен всех товаров
-        pass
+        return sum(p.price for p in self.items)
