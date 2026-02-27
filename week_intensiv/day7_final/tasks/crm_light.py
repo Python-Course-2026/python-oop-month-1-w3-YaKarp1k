@@ -35,5 +35,3 @@ class CRM:
         Пример: update_client(1, name="New Name") должен изменить только имя.
         Используйте setattr(obj, key, value) для динамического обновления.
         """
-        # ТВОЙ КОД ЗДЕСЬ
-        pass
